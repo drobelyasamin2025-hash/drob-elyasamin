@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دروب الياسمين للتعليم</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #e9f5ee;
+      color: #2f5933;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #3b7d4f;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #3b7d4f;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b79300;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    #home {
+      background: linear-gradient(to bottom right, #f6fff9, #ffffff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #home h2 {
+      font-size: 2.2em;
+      color: #3b7d4f;
+    }
+
+    #home p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #3b7d4f;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #b79300;
+    }
+
+    #lessons {
+      background-color: #f8fdf9;
+    }
+
+    .lesson-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .lesson {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .lesson:hover {
+      transform: translateY(-5px);
+    }
+
+    .lesson h3 {
+      color: #3b7d4f;
+    }
+
+    .lesson a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #3b7d4f;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .lesson a:hover {
+      background-color: #b79300;
+    }
+
+    #contact {
+      background-color: #ffffff;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #f4faf6;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+      color: #3b7d4f;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+    }
+
+    form button {
+      margin-top: 15px;
+      background-color: #3b7d4f;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #b79300;
+    }
+
+    footer {
+      background-color: #e9f5ee;
+      text-align: center;
+      padding: 20px;
+      color: #3b7d4f;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>دروب الياسمين للتعليم 🌿</h1>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#lessons">الدروس</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <!-- الصفحة الرئيسية -->
+  <section id="home">
+    <h2>مرحبًا بكم في دروب الياسمين للتعليم 🌸</h2>
+    <p>نرسم طريق العلم بعطر الياسمين، حيث نشارك المعرفة ونبني المستقبل بخطى واثقة.</p>
+    <a href="#lessons" class="btn">ابدأ التعلم</a>
+  </section>
+
+  <!-- قسم الدروس -->
+  <section id="lessons">
+    <h2 style="text-align:center; color:#3b7d4f;">📚 الدروس التعليمية</h2>
+    <div class="lesson-container">
+      <div class="lesson">
+        <h3>درس في اللغة العربية</h3>
+        <p>تعلم قواعد اللغة العربية بأسلوب سهل وممتع.</p>
+        <a href="#">شاهد الدرس</a>
+      </div>
+      <div class="lesson">
+        <h3>درس في الرياضيات</h3>
+        <p>فهم العمليات الحسابية بطرق مبسطة وعصرية.</p>
+        <a href="#">شاهد الدرس</a>
+      </div>
+      <div class="lesson">
+        <h3>درس في العلوم</h3>
+        <p>اكتشف أسرار الكون والحياة بطريقة علمية مشوقة.</p>
+        <a href="#">شاهد الدرس</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم التواصل -->
+  <section id="contact">
+    <h2 style="text-align:center; color:#3b7d4f;">💬 تواصل معنا</h2>
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">إرسال</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 دروب الياسمين للتعليم - جميع الحقوق محفوظة 🌿
+  </footer>
+
+</body>
+</html>
